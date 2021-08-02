@@ -5,6 +5,15 @@
   "repository": "https://github.com/azaeng04/betty-blocks-assessment.git",
   "author": "Azariah Engelbrecht",
   "license": "MIT",
+  "scripts": {
+    "cy:open": "cypress open --project .",
+    "cy:run": "cypress run",
+    "cy:verify": "cypress verify",
+    "test:chrome": "cypress run -b chrome --headless",
+    "test:firefox": "cypress run -b firefox --headless",
+    "test:chrome:ci": "cypress run -b chrome --headless",
+    "test:firefox:ci": "cypress run -b firefox --headless"
+  },
   "optionalDependencies": {
     "cypress": "^8.1.0"
   },
