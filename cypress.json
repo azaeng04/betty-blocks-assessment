@@ -1,0 +1,4 @@
+{
+  "baseUrl": "https://ui-test-app.betty.app/",
+  "ignoreTestFiles": ["!**.spec.*"]
+}
