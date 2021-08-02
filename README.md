@@ -1,4 +1,4 @@
-# Miro Assessment
+# Betty Blocks Assessment
 
 This assessment consists of tests that verify functionality on the Betty Blocks Account Creation page
 
@@ -18,7 +18,7 @@ Option 1:
 
 Option 2: Just execute the tests headlessly
 
-Same as Option 1 except step 4:
+Same as Option 1 except step 4: Run Cypress headlessly `yarn test:chrome` or `npm run test:chrome`
 
 **NB: Since this is running locally without Docker you would require atleast one common browser such as Chrome and/or Firefox. A list of supported Cypress browsers: https://docs.cypress.io/guides/guides/launching-browsers#Browsers**
 
