@@ -1,0 +1,27 @@
+name: Betty Blocks E2E CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag betty-blocks-e2e:${{env.GITHUB_RUN_ID}}
+  
+  test:
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: betty-blocks-e2e:${{env.GITHUB_RUN_ID}}
+    - name: Execute tests
+      run: docker-compose run --rm e2e yarn test:chrome:ci
