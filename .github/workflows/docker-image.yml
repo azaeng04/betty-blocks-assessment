@@ -15,9 +15,5 @@ jobs:
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag betty-blocks-e2e
 
-  test:
-    runs-on: ubuntu-latest
-    container: betty-blocks-e2e
-    steps:
       - name: Execute tests
         run: docker-compose run --rm e2e yarn test:chrome:ci
