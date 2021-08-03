@@ -1,4 +1,5 @@
 {
-  "baseUrl": "https://ui-test-app.betty.app/",
-  "ignoreTestFiles": ["!**.spec.*"]
+  "baseUrl": "https://ui-test-app.betty.app",
+  "ignoreTestFiles": ["!**.spec.*"],
+  "fixturesFolder": false
 }
