@@ -1,3 +1,4 @@
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/107cf4a1/betty-blocks-assessment)
 # Betty Blocks Assessment
 
 This assessment consists of tests that verify functionality on the Betty Blocks Account Creation page
